@@ -75,4 +75,4 @@ const Comprehensive = () => {
   );
 };
 
-export default comprehensive;
+export default Comprehensive;
