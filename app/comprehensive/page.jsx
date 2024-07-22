@@ -3,8 +3,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useApi from "../../source/useApi";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Comprehensive = () => {
+  const router = useRouter();
   const [searchText, setSearchText] = useState("");
   const [result, setResult] = useState([]);
   const [nextPageUrl, setNextPageUrl] = useState("");
@@ -54,7 +56,7 @@ const Comprehensive = () => {
 
   return (
     <div className="flex flex-wrap justify-center text-center px-4">
-      <Link href="./">上一頁</Link>
+      <button onClick={() => router.back()}>上一頁</button>
       <div className="w-full pt-4">
         <label>
           請輸入關鍵字
