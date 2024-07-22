@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
   return (
-    <nav className="h-10 bg-slate-300 items-center flex">
+    <nav className="h-10 bg-slate-100 items-center flex">
       <ul className="flex w-full justify-center gap-4">
         <li
           className={pathname.includes("/comprehensive") ? " text-red-500" : ""}
