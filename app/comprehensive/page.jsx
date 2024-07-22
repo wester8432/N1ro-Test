@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useApi from "../../source/useApi";
 import Image from "next/image";
-const comprehensive = () => {
+const Comprehensive = () => {
   const [searchText, setSearchText] = useState("");
   const [result, setResult] = useState([]);
   const SearchApi = async () => {
