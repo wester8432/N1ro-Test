@@ -54,7 +54,7 @@ const Comprehensive = () => {
 
   return (
     <div className="flex flex-wrap justify-center text-center px-4">
-      <Link href="../">上一頁</Link>
+      <Link href="./">上一頁</Link>
       <div className="w-full pt-4">
         <label>
           請輸入關鍵字
